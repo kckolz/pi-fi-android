@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:layout_width="255dp"
+        android:layout_height="255dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/add"
+            />
+        <ImageView
+            android:layout_width="255dp"
+            android:layout_height="255dp"
+            android:background="@drawable/icon"
+            android:id="@+id/album"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/bottomText"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/start_search_header"
+            android:text="Welcome to PiFi"
+            />
+        <TextView
+            style="@style/start_search_sub_text"
+            android:text="Choose your first song!"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/trackDetails"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/artist"
+            style="@style/start_search_header"
+            />
+        <TextView
+            android:id="@+id/track"
+            style="@style/start_search_sub_text"
+            android:text="Choose your first song!"/>
+    </LinearLayout>
+
+</RelativeLayout>
